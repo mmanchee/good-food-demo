@@ -34,4 +34,13 @@
 }
 #spacing {
   margin-top: 125px;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}
+#logo-img {
+  width: 40%;
+}
+#landing {
+  text-align: center;
 }

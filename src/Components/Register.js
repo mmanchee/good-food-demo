@@ -7,8 +7,11 @@ const Register = (props) => {
   return (
     <React.Fragment>
       <p>Register</p>
-      <button onClick = { () => onChangePage('Landing') }>Landing</button>
-
+      <input type='email' placeholder='Enter Email' /><br />
+      <input type='password' placeholder='Enter Password' /><br />
+      <input type='text' placeholder='Enter Name' /><br />
+      <input type='text' placeholder='Enter City' /><br />
+      <button className='btn btn-info' onClick = { () => onChangePage('Landing') }>Register</button>
     </React.Fragment>
   )
 }

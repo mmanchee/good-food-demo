@@ -6,7 +6,7 @@ import Register from './Register';
 import Account from './Account';
 
 const MainControl = () => {
-  const [page, setPage] = useState('MainMenu')
+  const [page, setPage] = useState('Landing')
 
   const changePage = newPage => {
     setPage(newPage);

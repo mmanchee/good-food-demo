@@ -7,8 +7,9 @@ const Login = (props) => {
   return (
     <React.Fragment>
       <p>Login</p>
-      <button onClick = { () => onChangePage('MainMenu') }>Main Menu</button>
-
+      <input type='email' placeholder='Enter Email' /><br />
+      <input type='password' placeholder='Enter Password' /><br />
+      <button className='btn btn-info' onClick = { () => onChangePage('MainMenu') }>Login</button>
     </React.Fragment>
   )
 }
