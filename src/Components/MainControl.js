@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Landing from './Landing';
 import MainMenu from './MainMenu';
-import Login from './Login';
-import Register from './Register';
-import Account from './Account';
+import Login from './Account/Login';
+import Register from './Account/Register';
+import Account from './Account/Account';
 
 const MainControl = () => {
   const [page, setPage] = useState('Landing')

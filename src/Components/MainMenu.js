@@ -19,8 +19,6 @@ const MainMenu = (props) => {
           </div>
         </div>
       </div>
-      
-
     </React.Fragment>
   )
 }

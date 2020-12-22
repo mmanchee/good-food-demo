@@ -54,7 +54,6 @@
   font-weight: 900;
   margin-right: auto;
   margin-left: auto;
-
 }
 .btn {
   margin: 5px;
@@ -73,4 +72,15 @@ input {
   border: 1px solid darkslategrey;
   border-radius: 10px;
   margin: 5px;
+}
+#account-menu-box {
+  background-color:khaki;
+  border: 5px solid darkslategrey;
+  border-radius: 20px;
+  width: 30%;
+  height: 350px;
+  font-size: 35px;
+  font-weight: 900;
+  margin-right: auto;
+  margin-left: auto;
 }
