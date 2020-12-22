@@ -1,20 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Register = (props) => {
+const Account = (props) => {
   const { onChangePage } = props;
 
   return (
     <React.Fragment>
-      <p>Register</p>
-      <button onClick = { () => onChangePage('Landing') }>Landing</button>
+      <p>Account</p>
+      <button onClick = { () => onChangePage('Chart') }>Chart</button>
 
     </React.Fragment>
   )
 }
 
-Register.propType = {
+Account.propType = {
   onChangePage: PropTypes.func
 }
 
-export default Register;
+export default Account;

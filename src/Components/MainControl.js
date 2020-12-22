@@ -1,4 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Landing from './Landing';
+import MainMenu from './MainMenu';
+import Login from './Login';
+import Register from './Register';
+import Account from './Account';
 
 const MainControl = () => {
   const [page, setPage] = useState('MainMenu')
@@ -8,20 +13,22 @@ const MainControl = () => {
   }
 
   let currentVisibleState = null;
-  
+
   switch (page) {
     case 'MainMenu':
-      return currentVisibleState = <MainMenu onChangePage = {this.changePage}/>
+      currentVisibleState = <MainMenu onChangePage = {changePage}/>
+      break;
     case 'Login':
-      return currentVisibleState = <Login onChangePage = {this.changePage}/>
+      currentVisibleState = <Login onChangePage = {changePage}/>
+      break;
     case 'Register':
-      return currentVisibleState = <Register onChangePage = {this.changePage}/>
-    case 'Login':
-      return currentVisibleState = <Login onChangePage = {this.changePage}/>
-    case 'Login':
-      return currentVisibleState = <Login onChangePage = {this.changePage}/>
+      currentVisibleState = <Register onChangePage = {changePage}/>
+      break;
+    case 'Account':
+      currentVisibleState = <Account onChangePage = {changePage}/>
+      break;
     default:
-      return currentVisibleState = <Landing onChangePage = {this.changePage}/>
+      currentVisibleState = <Landing onChangePage = {changePage}/>
   }
   return (
     <React.Fragment>
