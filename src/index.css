@@ -84,3 +84,13 @@ input {
   margin-right: auto;
   margin-left: auto;
 }
+.box {
+  height: 400px;
+  width: 100%;
+  text-align: left;
+  overflow-y: scroll;
+  margin-top: 2% 0 2% 5%;
+}
+.inner-box {
+  margin: 2% 5% 2% 5%;
+}
