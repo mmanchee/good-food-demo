@@ -8,7 +8,18 @@ const MainMenu = (props) => {
   return (
     <React.Fragment>
       <p>MainMenu</p>
-      <button onClick = { () => onChangePage('Account') }>Account</button>
+      <div className="centering">
+        <div id='main-menu-box'>
+          <div className="centering">
+            <p>Main Menu</p>
+            <button className='btn btn-info menu-btn' onClick = { () => onChangePage('Food') }>Foods</button>
+            <button className='btn btn-info menu-btn' onClick = { () => onChangePage('Event') }>Event</button>
+            <button className='btn btn-info menu-btn' onClick = { () => onChangePage('Calendar') }>Calendar</button>
+            <button className='btn btn-info menu-btn' onClick = { () => onChangePage('Account') }>Account</button>
+          </div>
+        </div>
+      </div>
+      
 
     </React.Fragment>
   )

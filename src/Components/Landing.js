@@ -8,13 +8,12 @@ const Landing = (props) => {
   return (
     <React.Fragment>
       <p>Landing</p>
-      <div id='landing'>
+      <div className='centering'>
         <img id='logo-img' src={Logo} alt='good food logo'/>
         <br />    
-        <button className='btn btn-info mr-2' onClick = { () => onChangePage('Login') }>Login</button>
-        <button className='btn btn-info ml-2' onClick = { () => onChangePage('Register') }>Register</button>
+        <button className='btn btn-info landing-btn' onClick = { () => onChangePage('Login') }>Login</button>
+        <button className='btn btn-info landing-btn' onClick = { () => onChangePage('Register') }>Register</button>
       </div>
-      
     </React.Fragment>
   )
 }
