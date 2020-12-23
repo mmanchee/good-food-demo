@@ -1,4 +1,4 @@
-[
+const goodList =[
   {
       "foodId": 4,
       "name": "ACEROLA",
@@ -9325,3 +9325,5 @@
       "tryamine": 0
   }
 ]
+
+export default goodList;

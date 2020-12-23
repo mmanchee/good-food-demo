@@ -7,7 +7,12 @@ import Account from './Account/Account';
 import Info from './Account/Info';
 import Chart from './Account/Chart';
 import Diet from './Account/Diet';
-import Food from './Food/FoodControl'
+import FoodMenu from './Food/FoodMenu';
+import FoodList from './Food/FoodList';
+import FoodSearch from './Food/FoodSearch';
+import Calendar from './Calendar/Calendar';
+import Event from './Calendar/Event';
+import FoodDetail from './Food/FoodDetail';
 
 const MainControl = () => {
   const [page, setPage] = useState('Landing')
@@ -40,8 +45,23 @@ const MainControl = () => {
     case 'Diet':
       currentVisibleState = <Diet onChangePage = {changePage}/>
       break;
-    case 'Food':
-      currentVisibleState = <Food onChangePage = {changePage}/>
+    case 'FoodMenu':
+      currentVisibleState = <FoodMenu onChangePage = {changePage}/>
+      break;
+    case 'FoodList':
+      currentVisibleState = <FoodList onChangePage = {changePage}/>
+      break;
+    case 'FoodSearch':
+      currentVisibleState = <FoodSearch onChangePage = {changePage}/>
+      break;
+    case 'FoodDetail':
+      currentVisibleState = <FoodDetail onChangePage = {changePage}/>
+      break;
+    case 'Event':
+      currentVisibleState = <Event onChangePage = {changePage}/>
+      break;
+    case 'Calendar':
+      currentVisibleState = <Calendar onChangePage = {changePage}/>
       break;
     default:
       currentVisibleState = <Landing onChangePage = {changePage}/>

@@ -55,6 +55,17 @@
   margin-right: auto;
   margin-left: auto;
 }
+#food-menu-box {
+  background-color:lightsalmon;
+  border: 5px solid darkslategrey;
+  border-radius: 20px;
+  width: 30%;
+  height: 350px;
+  font-size: 35px;
+  font-weight: 900;
+  margin-right: auto;
+  margin-left: auto;
+}
 .btn {
   margin: 5px;
   font-size: 25px;
@@ -106,4 +117,16 @@
   border: 1px solid darkslategrey;
   border-radius: 10px;
   margin: 5px;
+}
+.none {
+  color: green;
+}
+.low {
+  color: yellowgreen;
+}
+.mod {
+  color: rgb(216, 183, 38)
+}
+.high {
+  color: rgb(156, 14, 14);
 }
